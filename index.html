@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Para Entrar</title>
+</head>
+<body>
+    <main class="container">
+        <form>
+            <h1>PARA ENTRAR ESCREVA A SENHA</h1>
+
+            <div class="input-box">
+                <i class="bx bx-show" id="olhomagico" onclick="mostrarSenha()"></i>
+                <input placeholder="DIGITE A SENHA..." type="password" id="senha" required>
+                <i class="bx bxs-lock-alt" id="cadeado"></i>
+            </div>
+            <p id="erro"></p>
+            <div class="entrar-lembre">
+                <label>
+                    <input type="checkbox">
+                    lembre-me
+                </label>
+                <button type="button" onclick="verificarSenha()">entrar</button>
+            </div>
+        </form>
+    </main>
+    
+
+    <script>
+    function mostrarSenha() {
+        const senha = document.getElementById('senha');
+        const olho = document.getElementById('olhomagico');
+        if (senha.type === "password") {
+            senha.type = "text";
+            olho.classList.remove('bx-hide');
+            olho.classList.add('bx-show');
+        } else {
+            senha.type = "password";
+            olho.classList.remove('bx-show');
+            olho.classList.add('bx-hide');
+        }
+    }
+    function verificarSenha() {
+        const senha = document.getElementById('senha').value;
+        const erro = document.getElementById('erro');
+        if (senha === "somosum") {
+            window.location.href = "pagina2.html"; 
+        } else {
+            erro.textContent = "Se não se lembra , me pergunte.";
+            erro.style.color = "red";
+        }
+    }
+    </script>
+</body>
+</html>

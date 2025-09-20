@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>💖Nosso Tempo Juntos💖</title>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     
+
+
+</head>
+<body>
+    <h1>💖 Nosso Tempo Juntos 💖</h1>
+
+    <div class="player">
+        <div class="player-info">
+            <img id="player-capa" src="capa1.jpg" alt="Capa da música" class="player-capa">
+            <div>
+                <span id="player-titulo" class="player-titulo">ordinary</span><br>
+                <span id="player-artista" class="player-artista">harris calvin</span>
+            </div>
+        </div>
+        <div class="player-barra">
+            <span id="player-tempo-atual">0:00</span>
+            <input type="range" id="player-range" min="0" max="100" value="0">
+            <span id="player-tempo-total">0:00</span>
+        </div>
+        <div class="player-controles">
+            <button id="player-shuffle" title="Aleatório">
+                <span class="material-symbols-rounded">shuffle</span>
+            </button>
+            <button id="player-anterior" title="Anterior">
+                <span class="material-symbols-rounded">skip_previous</span>
+            </button>
+            <button id="player-play" title="Play">
+                <span class="material-symbols-rounded">resume</span>
+            </button>
+            <button id="player-pause" title="Pause" style="display:none;">
+                <span class="material-symbols-rounded">pause</span>
+            </button>
+            <button id="player-proxima" title="Próxima">
+                <span class="material-symbols-rounded">skip_next</span>
+            </button>
+            <button id="player-volume" title="Volume">
+                <span class="material-symbols-rounded">volume_up</span>
+            </button>
+            
+            
+            
+        </div>
+
+        <div class="musica-titulo"><span style="font-size:0.9em;">🎵</span> Nossa Música</div>
+        <audio id="player-audio"></audio>
+    </div>
+
+    
+    <div class="linha-roxa"></div>
+
+    <div class="contador">
+        <div class="contador-titulo">
+            <span class="emoji-relogio">⏰</span>
+            <span>Tempo Juntos</span>
+        </div>
+        <div class="contador-valores">
+            <div>
+                <span class="valor" id="dias">0</span>
+                <span class="rotulo">dias</span>
+            </div>
+            <div>
+                <span class="valor" id="horas">0</span>
+                <span class="rotulo">horas</span>
+            </div>
+            <div>
+                <span class="valor" id="minutos">0</span>
+                <span class="rotulo">minutos</span>
+            </div>
+            <div>
+                <span class="valor" id="segundos">0</span>
+                <span class="rotulo">segundos</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="carrossel">
+        <div class="memorias-titulo">Nossas Memórias</div>
+        <img id="memoria-img" src="imagem1.jpg" alt="Memória">
+        <div class="botoes">
+            <button onclick="anteriorMemoria()">Anterior</button>
+            <button onclick="proximaMemoria()">Próxima</button>
+        </div>
+        <div class="dots"></div>
+    </div>
+
+    <div class="mensagem">
+        <div class="coracao pulsing">💗</div>
+        <h3>Para Você, Victória</h3>
+        <p>
+            NNos encontramos por acaso, como quem tropeça no destino...
+            No começo, éramos apenas dois corações se conhecendo, sem imaginar o quanto ficaríamos próximos.
+            Com o tempo, aquela amizade simples foi crescendo, se tornando algo mais forte, mais bonito, mais verdadeiro.
+            <br>
+            Entre conversas, sorrisos e momentos compartilhados, nasceu em mim o desejo de estar ao seu lado — de te ter por perto, de cuidar de você, de te amar.
+            Você trouxe alegria para minha vida, leveza para os meus dias e um amor que só cresce a cada instante.
+            <br>
+            Sei que juntos ainda vamos viver tantas coisas lindas...
+            Acredito em nós, no que estamos construindo, e no que ainda vamos viver.
+            Nós vamos ser um grande casal, pode apostar.<br><br>
+            <button class="botao">Eu te amo, Victória. Meu amor, minha paz, meu futuro.</button>
+        </p>
+    </div>
+
+    <footer>
+        Feito para 💖 Victória 💖 por Matheus
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>
+
